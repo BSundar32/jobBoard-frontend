@@ -1,0 +1,42 @@
+.back-btn { background: none; border: none; color: var(--muted); font-size: 0.88rem; font-weight: 500; margin-bottom: 1.5rem; padding: 0; cursor: pointer; transition: color 0.2s; }
+.back-btn:hover { color: var(--navy); }
+
+.detail-layout { display: grid; grid-template-columns: 1fr 320px; gap: 1.75rem; align-items: start; }
+
+.detail-header-card { padding: 1.75rem; margin-bottom: 1.25rem; }
+.detail-top { display: flex; gap: 1.25rem; margin-bottom: 1.5rem; }
+.company-avatar-lg { width: 64px; height: 64px; border-radius: 14px; background: linear-gradient(135deg, var(--blue), var(--teal)); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 800; font-size: 1.5rem; flex-shrink: 0; }
+.detail-job-title { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 700; color: var(--navy); margin-bottom: 0.2rem; }
+.detail-company { color: var(--muted); font-size: 0.9rem; font-weight: 500; margin-bottom: 0.65rem; }
+.detail-badges { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+.detail-info-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
+.info-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--muted); }
+.info-icon { font-size: 0.9rem; }
+
+.detail-section-card { padding: 1.5rem; margin-bottom: 1.25rem; }
+.detail-section-card h3 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 0.85rem; }
+.detail-section-card p { color: var(--muted); font-size: 0.9rem; line-height: 1.8; }
+
+.req-list { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+.req-list li { padding: 0.45rem 0 0.45rem 1.25rem; color: var(--muted); font-size: 0.9rem; position: relative; }
+.req-list li::before { content: '✓'; position: absolute; left: 0; color: var(--teal); font-weight: 700; }
+
+.skills-wrap { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.skill-tag-lg { background: var(--blue-light); color: var(--blue); padding: 0.3rem 0.8rem; border-radius: 6px; font-size: 0.82rem; font-weight: 600; }
+
+.apply-card { padding: 1.5rem; position: sticky; top: 85px; }
+.apply-card h3 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 0.35rem; }
+.apply-card p { font-size: 0.83rem; color: var(--muted); margin-bottom: 1.25rem; }
+
+.apply-form { display: flex; flex-direction: column; gap: 0; }
+.apply-form .form-group textarea { resize: vertical; min-height: 110px; }
+
+.applied-banner { background: var(--green-light); color: var(--green); padding: 0.85rem; border-radius: 8px; text-align: center; font-weight: 700; font-size: 0.9rem; }
+.employer-note { font-size: 0.8rem; color: var(--muted); font-style: italic; text-align: center; margin-top: 0.5rem; }
+
+@media (max-width: 768px) {
+  .detail-layout { grid-template-columns: 1fr; }
+  .detail-sidebar { order: -1; }
+  .apply-card { position: static; }
+  .detail-info-row { grid-template-columns: 1fr; }
+}

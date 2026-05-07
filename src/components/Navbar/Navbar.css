@@ -1,0 +1,20 @@
+.navbar {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--white); border-bottom: 1px solid var(--border);
+  height: 65px; display: flex; align-items: center;
+  box-shadow: 0 1px 8px rgba(12,26,46,0.06);
+}
+.nav-inner { display: flex; align-items: center; justify-content: space-between; width: 100%; }
+.nav-logo { font-family: 'Fraunces', serif; font-size: 1.45rem; font-weight: 700; color: var(--navy); }
+.nav-logo span { color: var(--blue); }
+.nav-links { display: flex; gap: 0.25rem; }
+.nav-links a { font-size: 0.88rem; font-weight: 500; color: var(--muted); padding: 0.45rem 0.9rem; border-radius: 6px; transition: all 0.2s; }
+.nav-links a:hover, .nav-links a.active { color: var(--blue); background: var(--blue-light); }
+.nav-actions { display: flex; align-items: center; gap: 0.7rem; }
+.nav-user { display: flex; align-items: center; gap: 0.4rem; }
+.user-name { font-size: 0.88rem; font-weight: 600; color: var(--navy); }
+.role-badge { font-size: 0.68rem; font-weight: 700; padding: 0.15rem 0.5rem; border-radius: 4px; text-transform: capitalize; }
+.role-badge.jobseeker { background: var(--blue-light); color: var(--blue); }
+.role-badge.employer { background: var(--teal-light); color: var(--teal); }
+.role-badge.admin { background: var(--orange-light); color: var(--orange); }
+.btn-sm { padding: 0.42rem 1rem; font-size: 0.82rem; }

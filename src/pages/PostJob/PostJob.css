@@ -1,0 +1,7 @@
+.post-job-wrap { max-width: 760px; margin: 0 auto; }
+.post-job-form { padding: 2.25rem; }
+.form-section { margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+.form-section:last-of-type { border-bottom: none; margin-bottom: 1rem; }
+.form-section-title { font-size: 0.95rem; font-weight: 700; color: var(--navy); margin-bottom: 1.25rem; padding-left: 0.75rem; border-left: 3px solid var(--blue); }
+.form-group textarea { resize: vertical; min-height: 100px; }
+.form-actions { display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 1.5rem; }

@@ -1,0 +1,17 @@
+.auth-page { min-height: calc(100vh - 65px); display: flex; align-items: center; justify-content: center; padding: 2rem 1rem; }
+.auth-card { background: #fff; border: 1px solid var(--border); border-radius: 16px; padding: 2.5rem 2.25rem; width: 100%; max-width: 430px; box-shadow: var(--shadow); }
+.auth-brand { font-family: 'Fraunces', serif; font-size: 1.3rem; font-weight: 700; color: var(--blue); margin-bottom: 1.5rem; }
+.auth-title { font-family: 'Fraunces', serif; font-size: 1.7rem; font-weight: 700; color: var(--navy); margin-bottom: 0.3rem; }
+.auth-sub { color: var(--muted); font-size: 0.9rem; margin-bottom: 1.75rem; }
+.auth-btn { width: 100%; padding: 0.82rem; margin-top: 0.5rem; font-size: 0.92rem; }
+.auth-switch { text-align: center; margin-top: 1.25rem; font-size: 0.88rem; color: var(--muted); }
+.auth-switch a { color: var(--blue); font-weight: 600; }
+.demo-hints { margin-top: 1.25rem; padding: 0.9rem 1rem; background: var(--blue-light); border-radius: 8px; font-size: 0.78rem; color: var(--muted); line-height: 1.8; }
+.demo-hints strong { color: var(--navy); }
+
+.role-picker { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+.role-option { border: 1.5px solid var(--border); border-radius: 8px; padding: 0.7rem; text-align: center; cursor: pointer; transition: all 0.2s; }
+.role-option input { display: none; }
+.role-option span { font-size: 0.88rem; font-weight: 600; color: var(--muted); }
+.role-option.selected { border-color: var(--blue); background: var(--blue-light); }
+.role-option.selected span { color: var(--blue); }
