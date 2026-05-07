@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
+import axios from '../utils/axiosConfig';
 
 const user = localStorage.getItem('jb_user') ? JSON.parse(localStorage.getItem('jb_user')) : null;
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import axios from '../../utils/axiosConfig';
 import './Applications.css';
 
 const STATUS_COLORS = { Pending: 'badge-gray', Reviewed: 'badge-blue', Shortlisted: 'badge-teal', Rejected: 'badge-red', Hired: 'badge-green' };
